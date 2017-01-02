@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+body {
+    background:url(http://i.imgur.com/b9r5sEL.jpg) bottom center no-repeat;
+    background-size: cover;
+}
+header {    
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    max-width: 100%;
+    padding: 10px 40px;
+    overflow: hidden;
+    text-shadow: 0px 0px 2px black;
+}
+a {
+    color: #fbae1d;
+}
+footer {
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+    padding: 10px 40px;
+    overflow: hidden;
+    text-shadow: 0px 0px 2px black;
+    position: absolute;
+    bottom: 00px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 12px;
+    color: #fff;
+}
+.keys {    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.key {
+    box-shadow: 0px 0px 1px white;
+    font-size: 14px;
+    color: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 15px;
+    margin-right: 15px;
+    transform: rotate(0deg);
+    -webkit-transition: transform 0.10s, box-shadow 0.10s;
+    transition: transform 0.10s, box-shadow 0.10s;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.key:hover {
+    box-shadow: 0px 0px 1px #fbae1d;
+}
+
+.key p {
+    margin-top: 25px;
+}
+
+.key span {
+    font-size: 12px;
+    color: #fbae1d;
+    display: block;
+}
+
+.key:hover.active,
+.active {
+    box-shadow: 0px 0px 10px #fbae1d;
+    transform: rotate(3deg);
+}
